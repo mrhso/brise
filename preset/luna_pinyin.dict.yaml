@@ -28,7 +28,7 @@
 
 ---
 name: luna_pinyin
-version: "2016.07.10"
+version: "2017.03.09"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -383,6 +383,8 @@ use_preset_vocabulary: true
 㕵	guo
 㕶	fu
 㕷	huo
+㕷	pa
+㕷	pia
 㕸	li
 㕹	fa
 㕺	xiao
@@ -9313,6 +9315,7 @@ use_preset_vocabulary: true
 啩	gua
 啪	pa	100%
 啪	pai	0%
+啪	pia	10%
 啫	zhe
 啬	se
 啭	zhuan
@@ -16514,8 +16517,8 @@ use_preset_vocabulary: true
 殴	qu
 段	duan
 殶	zhu
-殷	yan	0.20%
-殷	yin	99.80%
+殷	yan	30%
+殷	yin
 殸	keng
 殸	qing
 殸	sheng
@@ -70633,6 +70636,7 @@ use_preset_vocabulary: true
 鼓樂喧天	gu yue xuan tian
 鼓翮	gu he
 鼓腹含哺	gu fu han bu
+鼓角	gu jiao
 鼓角	gu jue
 鼓鈸	gu ba
 鼠牙雀角	shu ya que jiao

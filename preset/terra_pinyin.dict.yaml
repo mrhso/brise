@@ -23,7 +23,7 @@
 
 ---
 name: terra_pinyin
-version: "2016.07.10"
+version: "2017.03.09"
 sort: by_weight
 use_preset_vocabulary: true
 max_phrase_length: 7
@@ -357,6 +357,7 @@ min_phrase_weight: 100
 㕵	guo2
 㕷	hua4
 㕷	pa1
+㕷	pia1
 㕸	li4
 㕹	fa2
 㕺	xiao1
@@ -9326,6 +9327,7 @@ min_phrase_weight: 100
 啨	ying1
 啩	gua4
 啪	pa1
+啪	pia1
 啫	zhe3
 啬	se4
 啭	zhuan4
@@ -16093,8 +16095,8 @@ min_phrase_weight: 100
 殴	ou1
 段	duan4
 殶	zhu4
-殷	yan1	1%
-殷	yin1	98%
+殷	yan1	30%
+殷	yin1
 殷	yin3	1%
 殸	qing4
 殹	yi4
@@ -67789,7 +67791,7 @@ min_phrase_weight: 100
 持卡人	chi2 ka3 ren2
 持危扶顛	chi2 wei2 fu2 dian1
 持更	chi2 geng1
-持槍搶劫	chi2 qiang1 qiang1 jie2
+持槍搶劫	chi2 qiang1 qiang3 jie2
 持正不阿	chi2 zheng4 bu4 e1
 持續時間	chi2 xu4 shi2 jian1
 持蠡測海	chi2 li2 ce4 hai3
@@ -68692,7 +68694,7 @@ min_phrase_weight: 100
 搳脫	hua2 tuo1
 搴旗取將	qian1 qi2 qu3 jiang4
 搵食	wen4 shi2
-搶劫罪	qiang1 jie2 zui4
+搶劫罪	qiang3 jie2 zui4
 搶占	qiang3 zhan4
 搶呼	qiang1 hu1
 搶地	qiang1 di4
@@ -99016,6 +99018,7 @@ min_phrase_weight: 100
 鼓膜	gu3 mo4
 鼓膜炎	gu3 mo4 yan2
 鼓興	gu3 xing4
+鼓角	gu3 jiao3
 鼓角	gu3 jue2
 鼓鈸	gu3 ba2
 鼓點子	gu3 dian3 zi5

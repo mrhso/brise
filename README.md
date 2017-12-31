@@ -24,20 +24,19 @@ In the following lists of Rime schemata, only schema IDs are listed for brevity.
 
 General
 ---
-  - default.yaml: Rime default settings
-  - symbols.yaml: punctuation and special characters
-  - essay.txt: a shared vocabulary and language model
+  - [`prelude`](https://github.com/rime/rime-prelude): the prelude package, providing Rime's default settings
+  - [`essay`](https://github.com/rime/rime-essay): 八股文 / a shared vocabulary and language model
 
 Preset schemata
 ---
 
 Input methods that are fundamental, or prevalent in a region.
 
-  - bopomofo: Zhuyin (aka. Bopomofo) standard layout
-  - cangjie5
-  - luna_pinyin: Pinyin in Tranditional Chinese
-  - stroke: five strokes represented by "hspnz"
-  - terra_pinyin: Pinyin with tones
+  - [`bopomofo`](https://github.com/rime/rime-bopomofo): 注音 / Zhuyin (aka. Bopomofo)
+  - [`cangjie`](https://github.com/rime/rime-cangjie): 倉頡輸入法 / Cangjie input method
+  - [`luna-pinyin`](https://github.com/rime/rime-luna-pinyin): 朙月拼音 / Pinyin in Tranditional Chinese
+  - [`stroke`](https://github.com/rime/rime-stroke): 五筆畫 / five strokes
+  - [`terra-pinyin`](https://github.com/rime/rime-terra-pinyin): 地球拼音 / School-taught Pinyin, with tone marks
 
 Supplemental schemata
 ---
@@ -46,17 +45,16 @@ Including input methods that are widely used and those who implement major
 modern dialects or historical diasystems. Less popular input methods with
 small dictionaries or without independent dictionaries are also included.
 
-  - combo_pinyin: Chord-typing Pinyin
-  - double_pinyin: ZiRanMa, ABC, flyPY, MSPY, PYJJ variants
-  - emoji
-  - ipa_xsampa: IPA symbols in X-SAMPA encoding
-  - jyutping: Cantonese
-  - pinyin_simp: Pinyin in Simplified Chinese
-  - quick5: Simplified Cangjie 5
-  - sampheng: Middle Chinese in 3-key shorthand
-  - wubi86
-  - wugniu: Wu (Shanghainese)
-  - zyenpheng: Middle Chinese Pinyin
+  - [`combo-pinyin`](https://github.com/rime/rime-combo-pinyin): 宮保拼音 / Chord-typing Pinyin
+  - [`double-pinyin`](https://github.com/rime/rime-double-pinyin): 雙拼 / Double Pinyin (ZiRanMa, ABC, flyPY, MSPY, PYJJ variants)
+  - [`emoji`](https://github.com/rime/rime-emoji): 繪文字 / input emoji with English or Chinese Pinyin keywords
+  - [`ipa`](https://github.com/rime/rime-ipa): 國際音標 / International Phonetic Alphabet
+  - [`jyutping`](https://github.com/rime/rime-jyutping): 粵拼 / Cantonese
+  - [`pinyin-simp`](https://github.com/rime/rime-pinyin-simp): 袖珍簡化字拼音 / Pinyin in Simplified Chinese
+  - [`quick`](https://github.com/rime/rime-quick): 速成 / Simplified Cangjie
+  - [`middle-chinese`](https://github.com/rime/rime-middle-chinese): 中古漢語拼音 / Middle Chinese Romanization
+  - [`wubi`](https://github.com/rime/rime-wubi): 五筆字型
+  - [`wugniu`](https://github.com/rime/rime-wugniu): 上海吳語 / Wu (Shanghainese)
 
 Extra schemata
 ---
@@ -64,10 +62,10 @@ Extra schemata
 Established input methods used by a minority, and evolving new inventions,
 are included in the source package but are not to be installed by default.
 
-  - array30
-  - scj6
-  - soutzoe: Wu (Suzhounese)
-  - stenotype: a stenographic system derived from ABC Easy Shorthand
+  - [`array`](https://github.com/rime/rime-array): 行列輸入法
+  - [`scj`](https://github.com/rime/rime-scj): 快速倉頡
+  - [`soutzoe`](https://github.com/rime/rime-soutzoe): 蘇州吳語 / Wu (Suzhounese)
+  - [`stenotype`](https://github.com/rime/rime-stenotype): 打字速記法 / a stenographic system derived from ABC Easy Shorthand
 
 Pull requests are welcome for anything notable that hasn't been included here,
 but you'll be responsible for providing data files along with an open-source
