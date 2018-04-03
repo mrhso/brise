@@ -29,7 +29,7 @@ switcher:
   option_list_separator: '／'
 
 menu:
-  page_size: 9
+  page_size: 7
 
 punctuator:
   full_shape:
