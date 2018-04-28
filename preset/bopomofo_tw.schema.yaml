@@ -24,12 +24,9 @@ switches:
     states: [ 半角, 全角 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
-  - options: [ zh_tw, zh_cn, raw ]
-    states:
-      - 字形 → 臺灣正體
-      - 字形 → 簡化字
-      - 字形
-    reset: 0
+  - name: zh_tw
+    reset: 1
+    # 啓用opencc字形轉換，但不在選單中顯示
 
 engine:
   processors:
@@ -53,9 +50,7 @@ engine:
     - reverse_lookup_translator
     - script_translator
   filters:
-    - simplifier@zh_tw
-    - simplifier@zh_cn
-    - simplifier@raw
+    - simplifier
     - uniquifier
 
 menu:
@@ -148,17 +143,9 @@ reverse_lookup:
     - xform/1//
     - 'xlit|bpmfdtnlgkhjqxZCSrzcsiuvaoeEAIOUMNKGR2345|ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦˊˇˋ˙|'
 
-zh_tw:
+simplifier:
   opencc_config: t2tw.json
   option_name: zh_tw
-
-zh_cn:
-  opencc_config: t2s.json
-  option_name: zh_cn
-
-raw:
-  option_name: raw
-  tags: [ none ] # 強制繞過轉換
 
 punctuator:
   full_shape:
