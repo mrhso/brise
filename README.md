@@ -47,7 +47,6 @@ small dictionaries or without independent dictionaries are also included.
 
   - [`combo-pinyin`](https://github.com/rime/rime-combo-pinyin): 宮保拼音 / Chord-typing Pinyin
   - [`double-pinyin`](https://github.com/rime/rime-double-pinyin): 雙拼 / Double Pinyin (ZiRanMa, ABC, flyPY, MSPY, PYJJ variants)
-  - [`emoji`](https://github.com/rime/rime-emoji): 繪文字 / input emoji with English or Chinese Pinyin keywords
   - [`ipa`](https://github.com/rime/rime-ipa): 國際音標 / International Phonetic Alphabet
   - [`jyutping`](https://github.com/rime/rime-jyutping): 粵拼 / Cantonese
   - [`pinyin-simp`](https://github.com/rime/rime-pinyin-simp): 袖珍簡化字拼音 / Pinyin in Simplified Chinese
