@@ -3,10 +3,12 @@
 
 schema:
   schema_id: bopomofo_tw
-  name: 注音·臺灣正體
+  name: 注音·臺灣正體·簡繁轉換
   version: "1.6"
   author:
     - 佛振 <chen.sst@gmail.com>
+    - Kunki Chiu <cokunhui@gmail.com>
+    - 滿滿 <zhtw2013@gmail.com>
   description: |
     注音符號輸入，採用「大千式」鍵盤排列，輸出臺灣正體字形。
 
@@ -24,9 +26,11 @@ switches:
     states: [ 半角, 全角 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
-  - name: zh_tw
-    reset: 1
-    # 啓用opencc字形轉換，但不在選單中顯示
+  - options: [ zh_tw, zh_simp ]
+    states:
+      - 字形 → 臺灣正體
+      - 字形 → 簡化字
+    reset: 0
 
 engine:
   processors:
@@ -50,7 +54,8 @@ engine:
     - reverse_lookup_translator
     - script_translator
   filters:
-    - simplifier
+    - simplifier@zh_tw
+    - simplifier@zh_simp
     - uniquifier
 
 menu:
@@ -143,9 +148,16 @@ reverse_lookup:
     - xform/1//
     - 'xlit|bpmfdtnlgkhjqxZCSrzcsiuvaoeEAIOUMNKGR2345|ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦˊˇˋ˙|'
 
-simplifier:
-  opencc_config: t2tw.json
+zh_tw:
   option_name: zh_tw
+  opencc_config: t2tw.json
+  tips: none
+  excluded_types: [ reverse_lookup ]
+
+zh_simp:
+  option_name: zh_simp
+  tips: all
+  excluded_types: [ reverse_lookup ]
 
 punctuator:
   full_shape:
