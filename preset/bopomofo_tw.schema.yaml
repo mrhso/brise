@@ -4,7 +4,7 @@
 schema:
   schema_id: bopomofo_tw
   name: 注音·臺灣正體·簡繁轉換
-  version: "1.6"
+  version: '1.7'
   author:
     - 佛振 <chen.sst@gmail.com>
     - Kunki Chiu <cokunhui@gmail.com>
@@ -24,8 +24,6 @@ switches:
     states: [ 中文, 西文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: ascii_punct
-    states: [ 。，, ．， ]
   - options: [ zh_tw, zh_simp ]
     states:
       - 字形 → 臺灣正體
